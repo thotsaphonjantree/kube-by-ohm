@@ -8,8 +8,9 @@ data:
     server {
       listen 80;
       server_name _;
-
+      
       location / {
-        return 200 "copter-goodguy is here!"
+        default_type application/json;
+        return 200 "Copter Good Guy is Here!";
       }
     }
